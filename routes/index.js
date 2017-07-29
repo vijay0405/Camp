@@ -51,4 +51,15 @@ router.get("/logout", function(req, res) {
 });
 
 
+// show register form
+router.get("/register", function(req, res){
+   res.render("register", {page: 'register'}); 
+});
+
+//show login form
+router.get("/login", function(req, res){
+   res.render("login", {page: 'login'}); 
+});
+
+
 module.exports = router;    
